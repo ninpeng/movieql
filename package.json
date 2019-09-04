@@ -9,7 +9,7 @@
     "graphql-yoga": "^1.18.3"
   },
   "scripts": {
-    
+    "build": "babel src -d build",
     "serve": "node build/index.js",
     "dev": "nodemon --exec babel-node src/index.js",
     "test": "yarn build && mocha --require @babel/register"
