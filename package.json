@@ -1,0 +1,26 @@
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/ninpeng/movieql.git",
+  "author": "ninpeng <ninpeng@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon --exec babel-node src/index.js",
+    "serve": "yarn build && node dist/index.js",
+    "test": "yarn build && mocha --require @babel/register"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.19.2"
+  }
+}
