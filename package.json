@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "babel src -d build",
-    "serve": "node build/index.js",
+    "start": "node build/index.js",
     "dev": "nodemon --exec babel-node src/index.js",
     "test": "yarn build && mocha --require @babel/register"
   },
