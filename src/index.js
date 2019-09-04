@@ -6,4 +6,4 @@ const server = new GraphQLServer({
   resolvers
 })
 
-server.start({port: 80}, () => console.log('server start'));
+server.start(() => console.log('server start'));
