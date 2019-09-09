@@ -1,11 +1,12 @@
 {
   "name": "movieql",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "src/index.js",
   "repository": "https://github.com/ninpeng/movieql.git",
   "author": "ninpeng <ninpeng@naver.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.0",
     "graphql-yoga": "^1.18.3"
   },
   "scripts": {
