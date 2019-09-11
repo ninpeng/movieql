@@ -13,8 +13,15 @@ type Movie {
   medium_cover_image: String!
 }
 
+type MovieList {
+  movie_count: Int!
+  limit: Int!
+  page_number: Int!
+  movies: [Movie]!
+}
+
 type Query {
-  movies(limit: Int, page: Int, rating: Float): [Movie]
+  movies(limit: Int, page: Int, rating: Float): MovieList
   movie(id: Int!): Movie
   suggestions(id: Int!): [Movie]
 }
