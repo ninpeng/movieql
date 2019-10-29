@@ -1,7 +1,7 @@
 type Cast {
-  name: String!
-  character_name: String!
-  url_small_image: String!
+  name: String
+  character_name: String
+  url_small_image: String
   imdb_code: String
 }
 
