@@ -11,7 +11,7 @@ export const getMovies = async (limit=10, page=1, minimum_rating='') => {
 }
 
 export const getMovie = async (movie_id) => {
-  const response = await axios.get(MOVIE_DETAILS_URL, { params: { movie_id } });
+  const response = await axios.get(MOVIE_DETAILS_URL, { params: { movie_id, with_images: true, with_cast: true } });
   return response.data.data.movie;
 }
 

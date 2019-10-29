@@ -1,3 +1,10 @@
+type Cast {
+  name: String!
+  character_name: String!
+  url_small_image: String!
+  imdb_code: String
+}
+
 type Movie {
   id: Int!
   imdb_code: String!
@@ -10,7 +17,17 @@ type Movie {
   description_full: String!
   yt_trailer_code: String
   language: String!
-  medium_cover_image: String!
+  mpa_rating: String!
+  background_image: String
+  medium_cover_image: String
+  large_cover_image: String
+  medium_screenshot_image1: String
+  medium_screenshot_image2: String
+  medium_screenshot_image3: String
+  large_screenshot_image1: String
+  large_screenshot_image2: String
+  large_screenshot_image3: String
+  cast: [Cast]
 }
 
 type MovieList {
