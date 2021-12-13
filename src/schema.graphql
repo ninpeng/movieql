@@ -12,7 +12,7 @@ type Movie {
   year: Int!
   rating: Float!
   runtime: Int!
-  genres: [String]!
+  genres: [String]
   summary: String
   description_full: String!
   yt_trailer_code: String
