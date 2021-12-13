@@ -34,7 +34,7 @@ type MovieList {
   movie_count: Int!
   limit: Int!
   page_number: Int!
-  movies: [Movie]!
+  movies: [Movie]
 }
 
 type Query {
